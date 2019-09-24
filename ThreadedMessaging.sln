@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadedMessaging", "ThreadedMessaging\ThreadedMessaging.csproj", "{F9135E0E-48FE-47AF-8197-AE1F063056CB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLScripts", "SQLScripts", "{7C89A09D-8BF4-40B2-98D0-2FC5CE6253BB}"
+	ProjectSection(SolutionItems) = preProject
+		SQLCreate.sql = SQLCreate.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
