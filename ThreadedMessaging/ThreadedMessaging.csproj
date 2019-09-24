@@ -68,9 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainPage.aspx" />
+    <Content Include="SQLConnectionString.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Globals.cs" />
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -79,6 +81,7 @@
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
