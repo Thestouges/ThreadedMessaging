@@ -16,10 +16,13 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <asp:TextBox ID="newMessage" runat="server" TextMode="MultiLine" Width="100%"></asp:TextBox>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="10"></textarea >
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <asp:Button ID="Button1" class="btn btn-success btn-lg" runat="server" Text="Save"/>
+                        <asp:Button ID="Button2" class="btn btn-danger btn-lg" runat="server" Text="Discard"/>
                     </div>
                 </div>
       
