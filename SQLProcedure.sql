@@ -9,7 +9,7 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	insert into Messenger (Message,ParentMessageID)
+	insert into Message (Message,ParentMessageID)
 	values (@message,@parentID)
 END
 Go

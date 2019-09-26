@@ -12,7 +12,7 @@ namespace ThreadedMessaging
         public void AddMessage(string msg, int parent = -1)
         {
             SqlConnection conn = new SqlConnection(Globals.connectionStr);
-            SqlCommand cmd = new SqlCommand("GetAllItems", conn);
+            SqlCommand cmd = new SqlCommand("AddMessage", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.Add("@message", SqlDbType.NVarChar);

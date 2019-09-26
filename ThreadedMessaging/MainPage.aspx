@@ -11,18 +11,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <script type="text/javascript">
+        function openThreadModal() {
+            $('#newThread').modal('show');
+        }
+    </script>
     <form id="form1" runat="server">
+        <asp:HiddenField ID="MessageID" runat="server" />
         <div class="modal fade" id="newThread" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="form-group">
-                            <textarea class="form-control" rows="10"></textarea >
+                            <textarea id="txtMessage" runat="server" class="form-control" rows="10"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <asp:Button ID="Button1" class="btn btn-success btn-lg" runat="server" Text="Save"/>
-                        <asp:Button ID="Button2" class="btn btn-danger btn-lg" runat="server" Text="Discard"/>
+                        <asp:Button ID="btnSave" class="btn btn-success btn-lg" runat="server" Text="Save" OnClick="btnSave_Click"/>
+                        <asp:Button ID="btnDiscard" class="btn btn-danger btn-lg" runat="server" Text="Discard" OnClick="btnDiscard_Click"/>
                     </div>
                 </div>
       
@@ -34,7 +40,7 @@
         </div>
         <br/>
         <div id="Msg" runat="server">
-            
+            <asp:TreeView ID="tvMessages" runat="server" OnSelectedNodeChanged="tvMessages_SelectedNodeChanged"></asp:TreeView>
         </div>
     </form>
 </body>
