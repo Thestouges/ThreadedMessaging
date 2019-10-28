@@ -11,6 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLScripts", "SQLScripts", 
 		SQLProcedure.sql = SQLProcedure.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{4555CE06-A0F2-469E-B02D-6C293A0D7656}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\page.PNG = ..\..\..\Desktop\page.PNG
+		..\..\..\Desktop\page2.PNG = ..\..\..\Desktop\page2.PNG
+		..\..\..\Desktop\page3.PNG = ..\..\..\Desktop\page3.PNG
+		..\..\..\Desktop\page4.PNG = ..\..\..\Desktop\page4.PNG
+		..\..\..\Desktop\page5.PNG = ..\..\..\Desktop\page5.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
