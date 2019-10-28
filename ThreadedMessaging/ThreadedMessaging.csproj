@@ -72,6 +72,11 @@
   <ItemGroup>
     <Content Include="CSS.css" />
     <Content Include="MainPage.aspx" />
+    <Content Include="Sample\page.PNG" />
+    <Content Include="Sample\page2.PNG" />
+    <Content Include="Sample\page3.PNG" />
+    <Content Include="Sample\page4.PNG" />
+    <Content Include="Sample\page5.PNG" />
     <Content Include="SQLConnectionString.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
